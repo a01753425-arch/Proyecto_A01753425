@@ -1,9 +1,26 @@
-# Ejercicio - Hello World
+```mermaid
+classDiagram
+class Atributos {
+    -int vida
+    -int salud
+    -int ataque
+    -int nivel
 
-Este proyecto tiene la estructura básica para cualquier proyecto C++. 
-
-La carpeta contiene el código fuente y el archivo de construcción ```make```.
-
-La carpeta `build` contiene el codigo binario generado por el archivo de construcción ```make```.
-
-Consulta el archivo assignments/README.md para instrucciones sobre la compilación y ejecución del proyecto.
+    +Atributos()
+    +Atributos(int vida, int salud, int ataque, int nivel)
+    +getVida() int
+    +getSalud() int
+    +getAtaque() int
+    +getNivel() int
+    +setVida(int vida) void
+    +setSalud(int salud) void
+    +setAtaque(int ataque) void
+    +setNivel(int nivel) void
+    +porSalud() int
+    +imprimeBarra() void
+    +calculaAtaque(Atributos& objetivo) int
+    +recibeAtaque(int daño) void
+    +atacar(Atributos& objetivo) void
+    +mostrarInfo() void
+}
+```
